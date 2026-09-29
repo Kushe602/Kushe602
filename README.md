@@ -50,18 +50,22 @@
 
 ### 📌 Featured projects
 
-Three production-shaped apps I designed, built, tested, and **deployed live** — each runs
-in a free, keyless demo mode (first load may take ~50s to wake the free instance).
+Five production-shaped apps I designed, built, and tested. The first three run as free,
+keyless **live demos** (first load may take ~50s to wake the free instance); the two newest
+ship with Docker, docker-compose, and CI.
 
 | Project | What it does | Live demo | Code |
 | --- | --- | --- | --- |
 | **🧠 DocuChat** | AI SaaS that lets you upload documents and chat with them — answers are grounded in your files via **retrieval-augmented generation (RAG)** and streamed with citations. | [Open](https://docuchat-94mn.onrender.com) | [Repo](https://github.com/Kushe602/AI-SaaS-with-RAG) |
 | **🤖 AgentFlow** | Autonomous AI agent with **real tool-calling** — it reasons, calls tools, reads results, and loops until done, streaming every step live over SSE. | [Open](https://agentflow-o1db.onrender.com) | [Repo](https://github.com/Kushe602/AI-Agent-Workflow-Automation-Tool) |
 | **👥 CollabSpace** | Real-time collaborative workspace: **Kanban boards, live docs, and a shared whiteboard** with presence, chat, and an activity feed — all over one WebSocket per user. | [Open](https://collabspace-y3gw.onrender.com) | [Repo](https://github.com/Kushe602/Real-Time-Collaborative-App) |
+| **🏢 TenantForge** | Multi-tenant B2B **helpdesk SaaS** built as real **microservices** (gateway + identity + tickets + notifications) over a Redis event bus, database-per-service, with JWT-derived **tenant isolation** (cross-tenant reads return 404). | `docker compose up` | [Repo](https://github.com/Kushe602/Multi-Tenant-B2B-SaaS-Platform) |
+| **🛒 Cartify** | Single-store **e-commerce + payments**: catalog, cart, atomic checkout, and orders — with **Stripe test mode** plus a deterministic keyless **fake-payments** provider, money in integer cents, and oversell protection. | *self-host* | [Repo](https://github.com/Kushe602/E-Commerce-Payments-SaaS) |
 
-> All three are **all-Python FastAPI** apps with async SQLAlchemy, JWT auth, Docker +
-> docker-compose, GitHub Actions CI, and a deterministic fake mode so CI needs no API key.
-> The two LLM apps are **provider-agnostic** — any OpenAI-compatible API key works.
+> All are **all-Python FastAPI** apps with async SQLAlchemy, JWT auth, Docker + docker-compose,
+> GitHub Actions CI, and a deterministic **fake mode** so CI needs no secrets. The two LLM apps
+> are **provider-agnostic** (any OpenAI-compatible API key); **TenantForge** is a true
+> multi-service system — an API gateway plus three internal services on a Redis event bus.
 
 ---
 
