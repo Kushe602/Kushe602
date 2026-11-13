@@ -75,8 +75,8 @@
 ## 📊 GitHub stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Kushe602&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kushe602&theme=dark&layout=compact&hide_border=true" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.shion.dev/api?username=Kushe602&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Kushe602&theme=dark&layout=compact&hide_border=true" alt="Top languages" />
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=Kushe602&theme=dark&hide_border=true" alt="Streak" />
